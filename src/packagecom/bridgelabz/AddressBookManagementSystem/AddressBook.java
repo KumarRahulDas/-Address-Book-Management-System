@@ -1,17 +1,28 @@
 package com.bridgelabz.AddressBookManagementSystem;
 
 
+
+
+import packagecom.bridgelabz.AddressBookManagementSystem.ContactPerson;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class AddressBook
 {
+
     static List<ContactPerson> contactList = new ArrayList<ContactPerson>();
     static Scanner sc = new Scanner(System.in);
     // method for adding contacts in list.
     public static void addContact()
     {
+
+    public static List<ContactPerson> contactList = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
+    // method for adding contacts
+    public static void addContact() {
+
         System.out.println(" Enter your first name : ");
         String firstName = sc.nextLine();
         System.out.println(" Enter your last name : ");
@@ -30,6 +41,7 @@ public class AddressBook
         ContactPerson addressBook = new ContactPerson(firstName, lastName, email, city, state, phoneNumber, zip);
         contactList.add(addressBook);
     }
+
     // main Method
     public static void main(String[] args)
     {
@@ -54,4 +66,8 @@ public class AddressBook
 
         System.out.println(contactList);
     }
+
+
+
+
 }
