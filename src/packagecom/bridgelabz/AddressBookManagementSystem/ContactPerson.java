@@ -1,8 +1,13 @@
 
+package com.bridgelabz.AddressBookManagementSystem;
+
+
+
 
 
 
 package com.bridgelabz.AddressBookManagementSystem;
+
 
 
 public class ContactPerson
@@ -11,6 +16,8 @@ public class ContactPerson
     private long phoneNumber,zip;
     ContactPerson(String firstName, String lastName, String email, String city, String state,long phoneNumber, long zip)
     {
+
+
 
 
 
@@ -28,11 +35,14 @@ public class ContactPerson {
     public ContactPerson(String firstName, String lastName, String city, String state, String email, long zip, long phoneNumber) {
 
 
+
         super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.city = city;
         this.state = state;
+
+
 
 
 
@@ -106,6 +116,9 @@ public class ContactPerson {
     }
 
 
+
+
+}
 
 
 }
